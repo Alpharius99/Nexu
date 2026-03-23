@@ -8,6 +8,10 @@
         <File Path="docs\UI_UX_GUIDELINES.md" />
         <File Path="sample.json" />
     </Folder>
+  <Folder Name="/build/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/App/">
     <Project Path="src/App/Nexu.App.csproj" />

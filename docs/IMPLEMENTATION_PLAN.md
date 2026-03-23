@@ -56,11 +56,11 @@
 
 | #   | Task                                          | Status | Notes                         |
 |-----|-----------------------------------------------|--------|-------------------------------|
-| 2.1 | `CanvasHostControl` — custom Avalonia control | TODO   | Renders PositionedNode + Edge |
-| 2.2 | Pan (mouse drag / trackpad)                   | TODO   |                               |
-| 2.3 | Zoom (scroll wheel / pinch)                   | TODO   |                               |
-| 2.4 | Selection state (click node → selected)       | TODO   |                               |
-| 2.5 | Wire up: File → Parse → Layout → Render       | TODO   | End-to-end read-only viewer   |
+| 2.1 | `CanvasHostControl` — custom Avalonia control | DONE   | Renders PositionedNode + Edge |
+| 2.2 | Pan (mouse drag / trackpad)                   | DONE   |                               |
+| 2.3 | Zoom (scroll wheel / pinch)                   | DONE   |                               |
+| 2.4 | Selection state (click node → selected)       | DONE   |                               |
+| 2.5 | Wire up: File → Parse → Layout → Render       | DONE   | End-to-end read-only viewer   |
 
 **Exit criteria:** Open a JSON file and see a pannable/zoomable mind-map. Read-only.
 

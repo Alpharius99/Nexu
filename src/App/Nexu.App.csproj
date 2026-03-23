@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../Parsing.Json/Nexu.Parsing.Json.csproj" />
+    <ProjectReference Include="../Domain/Nexu.Domain.csproj" />
+    <ProjectReference Include="../Layout/Nexu.Layout.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia" />
     <PackageReference Include="Avalonia.Desktop" />
     <PackageReference Include="Avalonia.Themes.Fluent" />
