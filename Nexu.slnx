@@ -1,4 +1,13 @@
 <Solution>
+    <Folder Name="/docs/">
+        <File Path="CLAUDE.md" />
+        <File Path="docs\ARCHITECTURE.md" />
+        <File Path="docs\BUG_TRACKER.md" />
+        <File Path="docs\IMPLEMENTATION_PLAN.md" />
+        <File Path="docs\MISTAKES_LOG.md" />
+        <File Path="docs\UI_UX_GUIDELINES.md" />
+        <File Path="sample.json" />
+    </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/App/">
     <Project Path="src/App/Nexu.App.csproj" />

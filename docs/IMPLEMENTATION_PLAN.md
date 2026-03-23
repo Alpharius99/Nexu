@@ -8,11 +8,11 @@
 
 | #   | Task                                                 | Status | Branch | Notes                                              |
 |-----|------------------------------------------------------|--------|--------|----------------------------------------------------|
-| 0.1 | Create `Nexu.sln` with 9 projects (5 src + 4 test)   | TODO   |        | .NET 10, Avalonia, nullable, TreatWarningsAsErrors |
-| 0.2 | `Directory.Build.props` — shared settings, analyzers | TODO   |        | Central package management                         |
-| 0.3 | `.editorconfig` — formatting rules                   | TODO   |        |                                                    |
-| 0.4 | GitHub Actions CI (build + test + warn-as-error)     | TODO   |        | Matrix: macOS + Windows                            |
-| 0.5 | Verify green build on both platforms                 | TODO   |        | Gate for Phase 1                                   |
+| 0.1 | Create `Nexu.sln` with 9 projects (5 src + 4 test)   | DONE   |        | .NET 10, Avalonia, nullable, TreatWarningsAsErrors |
+| 0.2 | `Directory.Build.props` — shared settings, analyzers | DONE   |        | Central package management                         |
+| 0.3 | `.editorconfig` — formatting rules                   | DONE   |        |                                                    |
+| 0.4 | GitHub Actions CI (build + test + warn-as-error)     | DONE   |        | Matrix: macOS + Windows                            |
+| 0.5 | Verify green build on both platforms                 | DONE   |        | Gate for Phase 1                                   |
 
 **Exit criteria:** `dotnet build` and `dotnet test` pass on macOS + Windows with zero warnings.
 
@@ -79,7 +79,7 @@
 | 3.7 | Patch generator: RemoveNode                          | TODO   | Handle comma cleanup                                                  |
 | 3.8 | Apply patch → re-parse → re-layout → re-render       | TODO   | Full round-trip                                                       |
 
-**Exit criteria:** Edits produce correct, format-preserving text patches. Re-parse validates patch correctness.
+**Exit criteria:** Edits produce correct, format-preserving text patches. Reparse validates patch correctness.
 
 ---
 
