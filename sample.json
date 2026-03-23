@@ -1,0 +1,157 @@
+{
+  "strings": {
+    "plain": "hello world",
+    "empty": "",
+    "with_spaces": "  leading and trailing  ",
+    "escape_sequences": "quote: \" backslash: \\ solidus: \/ bell: \b formfeed: \f newline: \n carriage_return: \r tab: \t",
+    "unicode_escape": "\u0041\u006C\u0061\u006E",
+    "unicode_bmp": "Greek: \u03B1\u03B2\u03B3",
+    "unicode_surrogate_pair": "\uD83D\uDE00",
+    "raw_unicode": "Chinese: 中文, Arabic: العربية, Hebrew: עברית, Emoji: 🌍",
+    "control_chars_escaped": "null byte escaped: \u0000 del: \u007F"
+  },
+  "numbers": {
+    "integer_zero": 0,
+    "integer_positive": 42,
+    "integer_negative": -17,
+    "integer_large": 9007199254740992,
+    "integer_large_negative": -9007199254740992,
+    "float": 3.14159265358979,
+    "float_negative": -2.718281828,
+    "float_small": 0.001,
+    "float_no_leading_zero_is_invalid": 0.5,
+    "exponent_positive": 1.5e10,
+    "exponent_negative": 2.5e-3,
+    "exponent_uppercase": 6.022E23,
+    "exponent_explicit_plus": 1e+100,
+    "exponent_zero": 0e0,
+    "negative_zero": -0
+  },
+  "booleans": {
+    "true_value": true,
+    "false_value": false
+  },
+  "null_value": null,
+  "arrays": {
+    "empty": [],
+    "single_element": [1],
+    "integers": [1, 2, 3, 4, 5],
+    "mixed_types": [1, "two", true, null, 3.14, [5, 6], {"seven": 7}],
+    "strings": ["alpha", "beta", "gamma"],
+    "nested": [[1, 2], [3, 4], [5, 6]],
+    "of_objects": [
+      {"id": 1, "name": "Alice"},
+      {"id": 2, "name": "Bob"},
+      {"id": 3, "name": "Carol"}
+    ],
+    "deeply_nested": [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+  },
+  "objects": {
+    "empty": {},
+    "single_key": {"only": "one"},
+    "many_keys": {
+      "a": 1,
+      "b": 2,
+      "c": 3,
+      "d": 4,
+      "e": 5
+    },
+    "nested": {
+      "level1": {
+        "level2": {
+          "level3": {
+            "level4": {
+              "value": "deep"
+            }
+          }
+        }
+      }
+    },
+    "keys_with_special_chars": {
+      "": "empty key",
+      " ": "space key",
+      "with spaces": "spaces in key",
+      "with\ttab": "tab in key",
+      "with\nnewline": "newline in key",
+      "with\"quote": "quote in key",
+      "with\\backslash": "backslash in key",
+      "unicode_key_\u03B1": "greek alpha key"
+    }
+  },
+  "real_world_examples": {
+    "person": {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "age": 32,
+      "isActive": true,
+      "score": 98.6,
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62701",
+        "country": "US",
+        "coordinates": {
+          "lat": 39.7817,
+          "lng": -89.6501
+        }
+      },
+      "phones": [
+        {"type": "mobile", "number": "+1-555-0100"},
+        {"type": "work", "number": "+1-555-0101"}
+      ],
+      "tags": ["developer", "designer", "manager"],
+      "metadata": null
+    },
+    "api_response": {
+      "status": 200,
+      "ok": true,
+      "message": "Success",
+      "data": {
+        "total": 1000,
+        "page": 1,
+        "per_page": 10,
+        "items": [
+          {"id": 1, "value": "first"},
+          {"id": 2, "value": "second"}
+        ]
+      },
+      "errors": [],
+      "timestamp": "2026-03-23T22:00:00.000Z"
+    },
+    "config": {
+      "version": "1.0.0",
+      "debug": false,
+      "maxRetries": 3,
+      "timeout": 30.5,
+      "endpoints": {
+        "primary": "https://api.example.com",
+        "fallback": null
+      },
+      "features": {
+        "darkMode": true,
+        "analytics": false,
+        "betaFeatures": ["featureA", "featureB"]
+      }
+    }
+  },
+  "edge_cases": {
+    "all_types_in_array": [null, true, false, 0, -1, 1.5, 1e10, "", "text", [], {}],
+    "deeply_mixed": {
+      "arr": [{"nested_arr": [1, [2, [3]]]}],
+      "num": -0.0e+0
+    },
+    "long_string": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "adjacent_same_type_values": {
+      "a": 1,
+      "b": 2,
+      "c": "x",
+      "d": "y",
+      "e": true,
+      "f": false,
+      "g": null,
+      "h": null
+    }
+  }
+}
