@@ -125,11 +125,4 @@ Last: [first session]
 [Emergency bridge — running bridge was not updated]
 No changes or facts in this session.
 
-## Crash Recovery
-Last session (2026-03-23T23:20:34.764142) was not properly closed (crash/kill).
-Recorded 0 file changes before crash.
-Last changed files: none
-Bridge from previous session is valid (above).
-For details use: memory_search("changes last session")
-
 # === END COGNILAYER ===
