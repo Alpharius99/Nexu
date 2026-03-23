@@ -1,0 +1,31 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/App/">
+    <Project Path="src/App/Nexu.App.csproj" />
+  </Folder>
+  <Folder Name="/src/Domain/">
+    <Project Path="src/Domain/Nexu.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Layout/">
+    <Project Path="src/Layout/Nexu.Layout.csproj" />
+  </Folder>
+  <Folder Name="/src/Parsing.Json/">
+    <Project Path="src/Parsing.Json/Nexu.Parsing.Json.csproj" />
+  </Folder>
+  <Folder Name="/src/Persistence/">
+    <Project Path="src/Persistence/Nexu.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Tests.Domain/">
+    <Project Path="tests/Tests.Domain/Nexu.Tests.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/Tests.Layout/">
+    <Project Path="tests/Tests.Layout/Nexu.Tests.Layout.csproj" />
+  </Folder>
+  <Folder Name="/tests/Tests.Parsing.Json/">
+    <Project Path="tests/Tests.Parsing.Json/Nexu.Tests.Parsing.Json.csproj" />
+  </Folder>
+  <Folder Name="/tests/Tests.Persistence/">
+    <Project Path="tests/Tests.Persistence/Nexu.Tests.Persistence.csproj" />
+  </Folder>
+</Solution>
