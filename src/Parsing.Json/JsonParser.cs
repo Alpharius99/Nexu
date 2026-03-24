@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Globalization;
 using System.Text;
 
 namespace Nexu.Parsing.Json;
@@ -199,7 +200,7 @@ public static class JsonParser
                         case 't': sb.Append('\t'); break;
                         case 'u' when _pos + 4 < _text.Length:
                             var hex = _text.Substring(_pos + 1, 4);
-                            if (int.TryParse(hex, System.Globalization.NumberStyles.HexNumber, null, out int cp))
+                            if (int.TryParse(hex, NumberStyles.HexNumber, null, out int cp))
                                 sb.Append((char)cp);
                             _pos += 4;
                             break;

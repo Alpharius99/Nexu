@@ -1,9 +1,10 @@
-using System.Collections.Generic;
 using System.Globalization;
+
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Media;
+
 using Nexu.Domain;
 using Nexu.Layout;
 
@@ -17,7 +18,7 @@ public sealed class CanvasHostControl : Control
     private static readonly IBrush NodeFillSelected = new SolidColorBrush(Color.FromRgb(219, 234, 254));
     private static readonly IPen NodePen = new Pen(new SolidColorBrush(Color.FromRgb(148, 163, 184)), 1.5);
     private static readonly IPen NodePenSelected = new Pen(new SolidColorBrush(Color.FromRgb(59, 130, 246)), 2.5);
-    private static readonly IPen EdgePen = new Pen(new SolidColorBrush(Color.FromRgb(148, 163, 184)), 1.0);
+    private static readonly IPen EdgePen = new Pen(new SolidColorBrush(Color.FromRgb(148, 163, 184)));
     private static readonly IBrush LabelBrush = new SolidColorBrush(Color.FromRgb(30, 41, 59));
     private static readonly IBrush EmptyLabelBrush = new SolidColorBrush(Color.FromRgb(148, 163, 184));
     private const double FontSize = 12.0;

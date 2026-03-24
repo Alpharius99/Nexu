@@ -25,6 +25,9 @@
   <Folder Name="/src/Parsing.Json/">
     <Project Path="src/Parsing.Json/Nexu.Parsing.Json.csproj" />
   </Folder>
+  <Folder Name="/src/Editing/">
+    <Project Path="src/Editing/Nexu.Editing.csproj" />
+  </Folder>
   <Folder Name="/src/Persistence/">
     <Project Path="src/Persistence/Nexu.Persistence.csproj" />
   </Folder>
@@ -37,6 +40,9 @@
   </Folder>
   <Folder Name="/tests/Tests.Parsing.Json/">
     <Project Path="tests/Tests.Parsing.Json/Nexu.Tests.Parsing.Json.csproj" />
+  </Folder>
+  <Folder Name="/tests/Tests.Editing/">
+    <Project Path="tests/Tests.Editing/Nexu.Tests.Editing.csproj" />
   </Folder>
   <Folder Name="/tests/Tests.Persistence/">
     <Project Path="tests/Tests.Persistence/Nexu.Tests.Persistence.csproj" />

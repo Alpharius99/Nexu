@@ -24,11 +24,11 @@
 
 | #    | Task                                                               | Status | Notes                                     |
 |------|--------------------------------------------------------------------|--------|-------------------------------------------|
-| 1A.1 | `RawDocument` record (`Text`, `Revision`, `FilePath`)              | TODO   |                                           |
-| 1A.2 | CST node types: `CstObject`, `CstProperty`, `CstArray`, `CstValue` | TODO   | Each carries `Start` + `End` char indices |
-| 1A.3 | Recursive-descent parser → CST                                     | TODO   | TDD: empty obj, nested, arrays, scalars   |
-| 1A.4 | Duplicate key detection → `Diagnostic` list                        | TODO   |                                           |
-| 1A.5 | Syntax error reporting (line + column)                             | TODO   |                                           |
+| 1A.1 | `RawDocument` record (`Text`, `Revision`, `FilePath`)              | DONE   |                                           |
+| 1A.2 | CST node types: `CstObject`, `CstProperty`, `CstArray`, `CstValue` | DONE   | Each carries `Start` + `End` char indices |
+| 1A.3 | Recursive-descent parser → CST                                     | DONE   | TDD: empty obj, nested, arrays, scalars   |
+| 1A.4 | Duplicate key detection → `Diagnostic` list                        | DONE   |                                           |
+| 1A.5 | Syntax error reporting (line + column)                             | DONE   |                                           |
 
 ### 1B — Domain Node Graph (EPIC 3)
 
@@ -70,14 +70,14 @@
 
 | #   | Task                                                 | Status | Notes                                                                 |
 |-----|------------------------------------------------------|--------|-----------------------------------------------------------------------|
-| 3.1 | `EditIntent` base + 5 subtypes                       | TODO   | RenameProperty, SetScalarValue, AddProperty, AddArrayItem, RemoveNode |
-| 3.2 | `TextPatch` record (Start, Length, OldText, NewText) | TODO   |                                                                       |
-| 3.3 | Patch generator: RenameProperty                      | TODO   | TDD: verify raw text after patch                                      |
-| 3.4 | Patch generator: SetScalarValue                      | TODO   |                                                                       |
-| 3.5 | Patch generator: AddProperty                         | TODO   | Handle indentation, trailing commas                                   |
-| 3.6 | Patch generator: AddArrayItem                        | TODO   |                                                                       |
-| 3.7 | Patch generator: RemoveNode                          | TODO   | Handle comma cleanup                                                  |
-| 3.8 | Apply patch → re-parse → re-layout → re-render       | TODO   | Full round-trip                                                       |
+| 3.1 | `EditIntent` base + 5 subtypes                       | DONE   | RenameProperty, SetScalarValue, AddProperty, AddArrayItem, RemoveNode |
+| 3.2 | `TextPatch` record (Start, Length, OldText, NewText) | DONE   |                                                                       |
+| 3.3 | Patch generator: RenameProperty                      | DONE   | TDD: verify raw text after patch                                      |
+| 3.4 | Patch generator: SetScalarValue                      | DONE   |                                                                       |
+| 3.5 | Patch generator: AddProperty                         | DONE   | Handle indentation, trailing commas                                   |
+| 3.6 | Patch generator: AddArrayItem                        | DONE   |                                                                       |
+| 3.7 | Patch generator: RemoveNode                          | DONE   | Handle comma cleanup                                                  |
+| 3.8 | Apply patch → re-parse → re-layout → re-render       | DONE   | Full round-trip                                                       |
 
 **Exit criteria:** Edits produce correct, format-preserving text patches. Reparse validates patch correctness.
 

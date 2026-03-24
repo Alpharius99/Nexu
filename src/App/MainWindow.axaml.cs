@@ -1,9 +1,7 @@
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Platform.Storage;
+
 using Nexu.Domain;
 using Nexu.Layout;
 using Nexu.Parsing.Json;
@@ -24,7 +22,7 @@ public partial class MainWindow : Window
 
     private async Task OpenJsonFileAsync()
     {
-        var topLevel = TopLevel.GetTopLevel(this);
+        var topLevel = GetTopLevel(this);
         if (topLevel is null) return;
 
         var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions

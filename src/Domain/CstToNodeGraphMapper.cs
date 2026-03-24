@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+
 using Nexu.Parsing.Json;
 
 namespace Nexu.Domain;

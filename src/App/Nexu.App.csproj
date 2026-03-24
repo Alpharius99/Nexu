@@ -11,6 +11,7 @@
     <ProjectReference Include="../Parsing.Json/Nexu.Parsing.Json.csproj" />
     <ProjectReference Include="../Domain/Nexu.Domain.csproj" />
     <ProjectReference Include="../Layout/Nexu.Layout.csproj" />
+    <ProjectReference Include="../Editing/Nexu.Editing.csproj" />
   </ItemGroup>
 
   <ItemGroup>
