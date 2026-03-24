@@ -123,13 +123,6 @@ Last: [first session]
 
 ## Last Session Bridge
 [Emergency bridge — running bridge was not updated]
-No changes or facts in this session.
-
-## Crash Recovery
-Last session (2026-03-24T00:31:51.629142) was not properly closed (crash/kill).
-Recorded 0 file changes before crash.
-Last changed files: none
-Bridge from previous session is valid (above).
-For details use: memory_search("changes last session")
+Files: tests/Tests.Editing/EditHistoryTests.cs (create), src/Editing/EditHistory.cs (create), tests/Tests.Persistence/AtomicFileWriterTests.cs (create), src/Persistence/AtomicFileWriter.cs (create), tests/Tests.Persistence/AutoSaveManagerTests.cs (create), src/Persistence/AutoSaveManager.cs (create), src/App/MainWindow.axaml (edit), src/App/MainWindow.axaml.cs (create), src/App/Nexu.App.csproj (edit), docs/IMPLEMENTATION_PLAN.md (edit)
 
 # === END COGNILAYER ===

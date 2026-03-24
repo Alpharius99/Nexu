@@ -87,12 +87,12 @@
 
 | #   | Task                                           | Status | Notes                             |
 |-----|------------------------------------------------|--------|-----------------------------------|
-| 4.1 | Atomic file writer (write temp → File.Replace) | TODO   |                                   |
-| 4.2 | Autosave on commit                             | TODO   | Debounced, not on every keystroke |
-| 4.3 | Block save on duplicate keys / syntax errors   | TODO   |                                   |
-| 4.4 | Patch history stack                            | TODO   |                                   |
-| 4.5 | Undo (Ctrl+Z) — reverse patch                  | TODO   |                                   |
-| 4.6 | Redo (Ctrl+Shift+Z) — re-apply patch           | TODO   |                                   |
+| 4.1 | Atomic file writer (write temp → File.Replace) | DONE   |                                   |
+| 4.2 | Autosave on commit                             | DONE   | Debounced, not on every keystroke |
+| 4.3 | Block save on duplicate keys / syntax errors   | DONE   |                                   |
+| 4.4 | Patch history stack                            | DONE   |                                   |
+| 4.5 | Undo (Ctrl+Z) — reverse patch                  | DONE   |                                   |
+| 4.6 | Redo (Ctrl+Shift+Z) — re-apply patch           | DONE   |                                   |
 
 **Exit criteria:** Changes persist atomically. Full undo/redo chain works.
 

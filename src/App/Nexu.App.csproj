@@ -12,6 +12,7 @@
     <ProjectReference Include="../Domain/Nexu.Domain.csproj" />
     <ProjectReference Include="../Layout/Nexu.Layout.csproj" />
     <ProjectReference Include="../Editing/Nexu.Editing.csproj" />
+    <ProjectReference Include="../Persistence/Nexu.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
