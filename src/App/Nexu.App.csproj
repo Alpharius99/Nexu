@@ -26,4 +26,14 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+
+  <!-- Re-sign with JIT entitlements on macOS (required for .NET JIT on macOS 15+).
+       $(TargetPath) points to the managed .dll; the native apphost has no extension. -->
+  <Target Name="SignWithEntitlements" AfterTargets="Build" Condition="'$(OS)' != 'Windows_NT'">
+    <PropertyGroup>
+      <_AppHostPath>$(TargetDir)$(AssemblyName)</_AppHostPath>
+    </PropertyGroup>
+    <Exec Command="codesign --sign - --entitlements &quot;$(MSBuildProjectDirectory)/app.entitlements&quot; --force &quot;$(_AppHostPath)&quot;"
+          ContinueOnError="false" />
+  </Target>
 </Project>

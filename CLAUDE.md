@@ -123,6 +123,6 @@ Last: [first session]
 
 ## Last Session Bridge
 [Emergency bridge — running bridge was not updated]
-Files: tests/Tests.Editing/EditHistoryTests.cs (create), src/Editing/EditHistory.cs (create), tests/Tests.Persistence/AtomicFileWriterTests.cs (create), src/Persistence/AtomicFileWriter.cs (create), tests/Tests.Persistence/AutoSaveManagerTests.cs (create), src/Persistence/AutoSaveManager.cs (create), src/App/MainWindow.axaml (edit), src/App/MainWindow.axaml.cs (create), src/App/Nexu.App.csproj (edit), docs/IMPLEMENTATION_PLAN.md (edit)
+Files: src/App/app.entitlements (create), src/App/Nexu.App.csproj (edit), src/App/Program.cs (edit)
 
 # === END COGNILAYER ===
